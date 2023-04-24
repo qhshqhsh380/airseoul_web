@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에어서울코딩</title>
+      <!-- 파비곤 -->
+      <link  rel= "icon"  유형= "images/png"  href= "images/favicon.ico" > 
+      <!-- swiper-slide css -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/main.css">
+
+      <!-- jquery-cdn -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- swiper js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script src="https://kit.fontawesome.com/8101464771.js" crossorigin="anonymous"></script>
+      <!-- 비디오사이즈 -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="js/jquery.fitvids.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    
+<!-- 헤더영역 -->
+ <!-- 모바일 메뉴 버튼 -->
+ <a href="#" class="mb-bt">
+    <span class="line"></span></a>
+        <!-- 모바일 메뉴바 -->
+        <div class="mb-nav">
+            <div class="mb-nav-top clear">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+            <div class="mb-nav-main">
+                <ul class="mb-menu">
+                    <li>
+                        <a href="#" class="mb-mainmenu">예약</a>
+                        <ul class="mb-submenu">
+                            <li><a href="#">항공권예약</a></li>
+                            <li><a href="#">예약조회/변경</a></li>
+                            <li><a href="#">수수료안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="mb-mainmenu">공항서비스</a>
+                        <ul class="mb-submenu">
+                            <li><a href="#">온라인 체크인</a></li>
+                            <li><a href="#">공항 체크인</a></li>
+                            <li><a href="#">수하물/유실물</a></li>
+                            <li><a href="#">취항지 공항정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="mb-mainmenu">기내서비스</a>
+                        <ul class="mb-submenu">
+                            <li><a href="#">Cafe'Mint</a></li>
+                            <li><a href="#">기내 면세품</a></li>
+                            <li><a href="#">기내 이벤트</a></li>
+                            <li><a href="#">기내 VOD 서비스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="mb-mainmenu">부가서비스</a>
+                        <ul class="mb-submenu">
+                            <li><a href="#">사전좌석 구매</a></li>
+                            <li><a href="#">사전수하물 구매</a></li>
+                            <li><a href="#">사전 기내식 주문</a></li>
+                            <li><a href="#">도움이 필요한 고객</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="mb-mainmenu">커뮤니티</a>
+                        <ul class="mb-submenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">민트패스</a></li>
+                            <li><a href="#">특가존</a></li>
+                            <li><a href="#">취항지 소개</a></li>
+                            <li><a href="#">미디어룸</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+   <!-- 모바일 메뉴 마스크 -->
+   <div class="mb-menu-mask"></div>
+
+
+    <header class="header">
+        <div class="header-container">
+            <!-- 로고영역 -->
+            <div class="logo">
+                <a href=""><img src="images/main-logo.png" alt="로고이미지"></a>
+            </div>
+            <!-- 메인nav영역 -->
+            <div class="nav">
+                <ul class="main-menu clear">
+                    <li><a href="#">예약</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">항공권 예약</a></li>
+                            <li><a href="#">예약조회/변경</a></li>
+                            <li><a href="#">수수료 안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">공항서비스</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">온라인 체크인</a></li>
+                            <li><a href="#">공항 체크인</a></li>
+                            <li><a href="#">수하물/유실물</a></li>
+                            <li><a href="#">취항지 공항정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">기내서비스</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Cafe'Mint</a></li>
+                            <li><a href="#">기내 면세품</a></li>
+                            <li><a href="#">기내 이벤트</a></li>
+                            <li><a href="#">기내 VOD 서비스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">부가서비스</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">사전좌석 구매</a></li>
+                            <li><a href="#">사전수하물 구매</a></li>
+                            <li><a href="#">사전 기내식 주문</a></li>
+                            <li><a href="#">도움이 필요한 고객</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">민트패스</a></li>
+                            <li><a href="#">특가존</a></li>
+                            <li><a href="#">취항지 소개</a></li>
+                            <li><a href="#">미디어룸</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon">
+                <a href="#"><img src="images/login-icon.png" alt="로그인" title="로그인"></a>
+                <a href="#"><img src="images/mypage-icon.png" alt="마이페이지" title="마이페이지"></a>
+                <a href="#"><img src="images/search-icon.png" alt="검색" title="검색"></a>
+            </div>
+        </div>
+    </header>
+    <!-- 메인배너영역 -->
+<section class="mainbanner">
+        <div class="airplane-inner">
+        <img class="animate__animated animate__fadeInBottomLeft" src="images/airplane.png" alt="비행기이미지">
+        </div>
+        <div class="banner-bg"></div>
+        <div class="mb-bg01">
+            <img src="images/mb-banner.png" alt="모바일배너이미지">
+            <div class="cloud-left">
+                <img src="images/Cloud.png" alt="구름이미지">
+            </div>
+            <div class="cloud-left cloud-left-02 ">
+                <img src="images/Cloud.png" alt="구름이미지">
+            </div>
+            <div class="cloud-right-02">
+                <img src="images/Cloud.png" alt="구름이미지">
+            </div>
+        </div> 
+</section>
+    <!-- 배너퀵메뉴영역 -->
+    <section class="banner-quick">
+         <div class="ba-container">
+            <!-- pc버전 -->
+            <div class="quick-menu">
+                <div class="form">
+                    <button>편도</button>
+                    <button>왕복</button>
+                    <button class="but">다구간</button>
+                    <input class="txt" type="text" placeholder="할인코드입력">
+                    <div class="check">
+                    <input type="checkbox">
+                    <label for="">가까운 날짜 조회</label>
+                     </div>    
+                </div>
+                <div class="form02">
+                    <div class="input-wrap">
+                        <input type="text" id="" name="" placeholder="출발지">
+                        <a class="btn-1" href="#"></a>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" id="" name="" placeholder="도착지">
+                        <a class="btn-2" href="#"></a>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" id="" name="" placeholder="탑승일">
+                        <a class="btn-3" href="#"></a>
+                    </div>
+                    <div class="input-wrap">
+                        <input class="input-wrap-04" type="text" id="" name="" placeholder="탑승객">
+                        <a class="btn-4" href="#"></a>
+                    </div>
+                  <div class="input-wrap input-wrap-4">
+                     <input class="input-wrap-04" type="text" id="" name="" placeholder="좌석등급">
+                        <a class="btn-5" href="#"></a>
+                    </div>
+                    <div class="input-wrap input-wrap-5">
+                        <input type="text" id="" name="" placeholder="조회">
+                        <a class="btn-6" href="#"></a>
+                    </div>
+                
+                </div>
+            </div>
+ <!-- 모바일퀵메뉴버전 -->
+         <div class="mb-quick">
+            <div class="mb-box">
+             <label><input type="radio" name="radio" id="Departure">  왕복</label>
+             <label><input type="radio" name="radio" id="Arrival">  편도</label>
+             <div class="text">
+                    <span class="left">출발 <br><p class="m-txt m-txt-01">Departure</p></span> 
+                    <span class="right">도착<br><p class="m-txt m-txt-02">Arrival</p></span>
+             </div>
+                <div class="box">
+                    <button type="button">일정선택</button>
+                </div>
+                
+            </div>
+         </div>
+
+        <!-- 구름 -->
+        </div>
+        <div class="cloud-right">
+            <img src="images/Cloud-2.png" alt="구름이미지">
+        </div>
+        <div class="cloud-left">
+            <img src="images/Cloud.png" alt="구름이미지">
+        </div>
+        <div class="cloud-left cloud-left-02 ">
+            <img src="images/Cloud.png" alt="구름이미지">
+        </div>
+        <div class="cloud-right cloud-right-02">
+            <img src="images/Cloud-2.png" alt="구름이미지">
+        </div>
+
+
+
+    </section>
+    <!-- 사이드배너영역  -->
+    <section class="side-banner">
+        <div class="quick">QUICK</div>
+        <div class="check-in"><a href="#">온라인체크인</a></div>
+        <div class="check"><a href="#">실시간출/도착조회</a></div>
+        <div class="bus">
+            <div class="plan">
+                <a href="#"><img src="images/airplane.png" alt="비행기이미지"></a>
+            </div>
+            <div class="text">
+                <a  href="#">에어서울에어버스321</a>
+            </div>
+       </div>
+        <div class="top-btn">
+            <a href="javascipt:void(0)" class="go_top">
+                <i class="fa-solid fa-angle-up"></i><br><span>TOP</span></a>
+       </div>
+    </section>
+    <!-- 메인영역 -->
+    <!-- 취항지소개 -->
+    <main class="main">
+        <section class="content">
+            <div class="inner clear">
+                <h2>취항지 소개</h2>
+                <!-- 제주도 -->
+                <div class="bg-img">
+                    <a href="#">
+                    <span></span><span></span><span></span><span></span>
+                    <img src="images/jeju.png" alt="제주이미지" onmouseover="this.src='images/hover-jeju.png'" 
+                    onmouseout="this.src='images/jeju.png'"></a>
+                </div>
+                <!-- 도쿄 -->
+                <div class="bg-img">
+                    <a href="#">
+                    <span></span><span></span><span></span><span></span>
+                    <img src="images/tokyo.png" alt="도쿄이미지" onmouseover="this.src='images/hover-tokyo.png'" 
+                    onmouseout="this.src='images/tokyo.png'"></a>
+                </div>
+              <!-- 오사카 -->
+              <div class="bg-img bg-img05">
+                <a href="#">
+                    <span></span><span></span><span></span><span></span>
+                <img src="images/osaka.png" alt="오사카이미지" onmouseover="this.src='images/hover-osaka.png'" 
+                onmouseout="this.src='images/osaka.png'"></a>
+             </div>
+              <!-- 요나고 -->
+              <div class="bg-img bg-img04">
+                <a href="#">
+                    <span></span><span></span><span></span><span></span>
+                <img src="images/yonago.png" alt="요나고이지미" onmouseover="this.src='images/hover-yonago.png'" 
+                onmouseout="this.src='images/yonago.png'"></a>
+            </div>
+           </div> 
+           <div class="inner clear">
+                <!-- 시즈오카 -->
+                <div class="bg-img">
+                    <a href="#">
+                        <span></span><span></span><span></span><span></span>
+                    <img src="images/shizoka.png" alt="시즈오카이미지" onmouseover="this.src='images/hover-shizoka.png'" 
+                    onmouseout="this.src='images/shizoka.png'"></a>
+                </div>
+                <!-- 히로시마 -->
+                <div class="bg-img">
+                    <a href="#">
+                        <span></span><span></span><span></span><span></span>
+                    <img src="images/HIRSHIMA.png" alt="히로시마이미지" onmouseover="this.src='images/HOVER-HIRSHIMA.png'" 
+                    onmouseout="this.src='images/HIRSHIMA.png'"></a>
+                </div>
+              <!-- 다카마쓰 -->
+              <div class="bg-img bg-img05">
+                <a href="#">
+                    <span></span><span></span><span></span><span></span>
+                <img src="images/TAKAMASU.png" alt="다카마쓰이미지" onmouseover="this.src='images/HOVER-TAKAMASU.png'" 
+                onmouseout="this.src='images/TAKAMASU.png'"></a>
+                </div>
+              <!-- 코타기나발루 -->
+              <div class="bg-img bg-img04">
+                <a href="#">
+                    <span></span><span></span><span></span><span></span>
+                <img src="images/KOTA.png" alt="코타키나발루이미지" onmouseover="this.src='images/HOVER-KOTA.png'" 
+                onmouseout="this.src='images/KOTA.png'"></a>
+            </div>
+         </div>
+        </section>
+    <!-- 모바일 슬라이더 -->
+      <section class="content">
+         <div class="inner">
+            <div class="swiper sw-basic-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/jeju.png" alt="제주이미지"></a>
+                    </div>
+                    <div class="swiper-slide">
+                            <a href="#"><img src="images/tokyo.png" alt="도쿄이미지"></a>
+                    </div>
+                    <div class="swiper-slide">
+                            <a href="#"><img src="images/osaka.png" alt="오사카이미지"></a>
+                    </div>
+                    <div class="swiper-slide">
+                            <a href="#"><img src="images/shizoka.png" alt="시즈오카이미지"></a>
+                    </div>
+                    <div class="swiper-slide">
+                            <a href="#"><img src="images/HIRSHIMA.png" alt="히로시마이미지"></a>
+                    </div>
+                    <div class="swiper-slide">
+                            <a href="#"><img src="images/KOTA.png" alt="코타키나발루이미지"></a>
+                    </div>
+              </div>
+              <div class="swiper-pagination"></div>   
+    
+              
+            </div>
+<!-- 
+            <div class="btn-next">
+                <span class="material-icons">
+                    chevron_right
+                    </span>
+                    
+            </div>
+            <div class="btn-prev">
+                <span class="material-icons">
+                    chevron_left
+                    </span>
+
+    
+            </div> -->
+       </div>
+      </section>
+
+    </main>
+
+<!-- 지금떠나기 좋은 여행  -->
+     <section class="contents">
+        <h2>지금 떠나기 좋은 여행</h2>
+        <div class="inner-2">
+                <div class="swiper sw-basic">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="box box-0">
+                                <img src="images/JEJUDO.png" alt="제주도사진">
+                                  <figcaption>
+                                    <h3>서울/김포 - 제주</h3>
+                                    <p>일반석 편도</p>
+                                    <span>KRW 10,600 ~</span>
+                                    <i>에메랄드를 쏟아 부은 옥빛 바다
+                                        푸르른 들판과 오름,
+                                        특색 있는 맛집과 감성적인 카페를 모두 누릴 수 있는 제주</i>
+                                  </figcaption>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box box-1">
+                                <img src="images/Narita.png" alt="나리타사진">
+                                <figcaption>
+                                    <h3>서울/인천 - 도쿄/나리타</h3>
+                                    <p>일반석 편도</p>
+                                    <span>KRW 76,600 ~</span>
+                                    <i>대도시의 화려함 속에 자연이 숨어있고,
+                                        옛 모습 그대로의 거리가 살아 숨쉬는
+                                        일본의 수도이자 세계 최대의 도시 중 하나, 도쿄</i>
+                                  </figcaption>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box box-2">
+                                <img src="images/Boracay.png" alt="보라카이사진">
+                                <figcaption>
+                                    <h3>서울/인천 - 보라카이</h3>
+                                    <p>일반석 편도</p>
+                                    <span>KRW 79,900 ~</span>
+                                    <i>발길 닿는 모든 장소에 자연이 숨쉬며
+                                        다양한 볼거리와 먹거리가 가득한 문화의 섬,
+                                        세계 3대 석양을 품은 보물섬</i>
+                                  </figcaption>
+                                  <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box box-3">
+                                <img src="images/OSAKA-2.png" alt="오사카사진">
+                                <figcaption>
+                                    <h3>서울/인천 - 오사카/간사이</h3>
+                                    <p>일반석 편도</p>
+                                    <span>KRW 65,900 ~</span>
+                                      <i>고층 빌딩과 화려한 야경,  천하의 부엌이자 쇼핑의 
+                                        천국 다양한 먹거리와 볼거리로 오감만족이 가능한 도시</i>
+                                    </figcaption>
+                                    <a href="#"></a>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="swiper-pagination"></div>       
+                </div>
+    
+                <div class="btn-next">
+                    <span class="material-icons">
+                        chevron_right
+                        </span>
+                        
+                </div>
+                <div class="btn-prev">
+                    <span class="material-icons">
+                        chevron_left
+                        </span>
+    
+        
+            </div>
+      </div>
+     </section>
+
+<!--제휴서비스 -->
+<div class="container">
+    <h2>제휴 서비스</h2>
+    <div class="inner-3 clear">
+        <div class="pc-circle">
+            <a href="#">
+            <div class="circle">
+            <img src="images/hotel-icon.png" alt="호텔아이콘">
+            </div>
+            </a>
+            <a href="#">
+            <div class="circle">
+                <img src="images/car-icon.png" alt="렌터카아이콘">
+            </div>
+            </a>
+            <a href="#">
+            <div class="circle">
+                <img src="images/shopping-icon.png" alt="쇼핑아이콘">
+            </div>
+            </a>
+            <a href="#">
+            <div class="circle">
+                <img src="images/active-icon.png" alt="액티비티아이콘">
+            </div>
+            </a>
+             <a href="#">
+            <div class="circle">
+                <img src="images/card-icon.png" alt="카드아이콘">
+            </div>
+            </a>
+            <a href="#">
+            <div class="circle circle-1">
+            <img src="images/trip-icon.png" alt="여행자보험아이콘">
+             </div>
+            </a>  
+            <div class="title clear">
+                <ul>
+                    <li><a href="#">호텔</a></li>
+                    <li><a href="#">렌터카</a></li>
+                    <li><a href="#">쇼핑 및 편의</a></li>
+                    <li><a href="#">액티비티</a></li>
+                    <li><a href="#">제휴카드</a></li>
+                    <li><a href="#">여행자보험</a></li>
+           
+                </ul>
+              </div>
+        </div>
+      
+
+      <div class="mb-circle">
+        <div class="mb-box2">
+        <a href="#"><img src="images/mb-hotel-icon.png" alt="호텔아이콘"></a>
+        <a href="#"><img src="images/mb-car-icon.png" alt="렌터카아이콘"></a>
+        <a href="#"><img src="images/mb-shopping-icon.png" alt="쇼핑아이콘"></a>
+        <a href="#"><img src="images/mb-active-icon.png" alt="액티비티아이콘"></a>
+        <a href="#"><img src="images/mb-card-icon.png" alt="카드아이콘"></a>
+        <a href="#"><img src="images/mb-trip-icon.png" alt="여행자보험아이콘"></a>
+       </div>
+      </div>
+    </div>
+    <div class="line">
+    </div>
+
+
+
+    <!-- 제휴서비스 중간 선 -->
+
+</div>   
+<!-- 제휴서비스 카드 배너영역 -->
+<div class="container container-box">
+    <div class="inner-3">
+        <div class="card">
+          <div class="banner-control clear">
+              <div class="banner-control-box">
+                  <ul>
+                      <li class="banner-back"></li>
+                      <li class="banner-play"></li>
+                      <li class="banner-forward"></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="swiper sw-banner">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                   <a href="#">
+                      <figure class="card-box">
+                        <img src="images/agoda.png" alt="아고다사진"/>
+                        <figcaption>
+                          <h3>아고다</h3>
+                          <p>전세계 호텔 최대 80% 에어서울만의
+                            추가 <br> 할인 특가로 더욱 가벼운 여행을 시작하세요!</p>
+                        </figcaption>
+                      </figure>
+                   </a>
+                  </div>
+                  <div class="swiper-slide">
+                  <a href="#">
+                      <figure class="card-box">
+                        <img src="images/hotels.png" alt="호텔스컴바인사진"/>
+                        <figcaption>
+                          <h3>호텔스컴바인</h3>
+                          <p>국내외 주요 호텔 예약사이트의 실기간 특가를
+                            호텔스컴바인에서 한 눈에 비교하세요!</p>
+                        </figcaption>
+                      </figure>
+                   </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#">
+                       <figure class="card-box">
+                        <img src="images/carmore.png" alt="카모아사진"/>
+                        <figcaption>
+                          <h3>카모아(제주도, 내륙, 글로벌)</h3>
+                          <p>시원한 가격비교 플랫폼에서
+                            에어서울 <br> 특별 할인 쿠폰을 받으세요!</p>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#">
+                       <figure class="card-box">
+                        <img src="images/jejucar.png" alt="제주렌트가사진"/>
+                        <figcaption>
+                          <h3>제주렌트카(제주도)</h3>
+                          <p>제주지역 에어서울 회원 최대 85% 할인</p>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#">
+                       <figure class="card-box">
+                        <img src="images/jejupass.png" alt="제주패스사진"/>
+                        <figcaption>
+                          <h3>제주패스렌트카(제주도)</h3>
+                          <p>정상가 차량 10% 할인 코드 [FAS10] <br>
+                            할인가 차량 5% 할인 코드 [FAS5]</p>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#">
+                       <figure class="card-box">
+                        <img src="images/kkk.png" alt="kkday사진"/>
+                        <figcaption>
+                          <h3>kkday</h3>
+                          <p>에어서울 회원 대상 <br>
+                            국내/국제 액티비티 할인 쿠폰 제공  </p>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#">
+                       <figure class="card-box">
+                        <img src="images/realtrip.png" alt="리얼트립사진"/>
+                        <figcaption>
+                          <h3>마이리얼트립</h3>
+                          <p>에어서울 항공권 구매 시,
+                            액티비티, 숙소 최대 7% 할인 쿠폰 제공 </p>
+                        </figcaption>
+                      </figure>
+                    </a>
+                 </div>
+             </div>
+          </div>
+      </div>
+   </div>
+</div>
+</section>
+
+<!-- 이벤트영역 -->
+<section class="container-2">
+    
+    <div class="inner-4">
+        <h3>에어서울만의 이벤트</h3>
+      <div class="box-4">
+        <figure class="event">
+            <a href="#"><img src="images/event-Boracay.png" alt="보라카이사진"></a>
+            <figcaption>
+              <h2>우리, 지금, 여기 보라카이</h2>
+              <p>보라카이 증편 기념 x 보자무싸 카페 제휴</p>
+             <span>이벤트 기간 2023.03.03 ~ 2023.04.30</span> 
+            </figcaption>
+          </figure>
+          <figure class="event event-01">
+            <a href="#"><img src="images/event-coffee.png" alt="커피빈사진"></a>
+            <figcaption>
+              <h2>에어서울 x 커피빈 다카마쓰 컨셉존 오픈</h2>
+              <p>에어서울 x 커피빈 다카마쓰 컨셉존 오픈</p>
+             <span>이벤트 기간 2023.03.08 ~ 2023.04.14</span> 
+            </figcaption>
+          </figure>
+          <figure class="event">
+            <a href="#"><img src="images/event-cinema.png" alt="시네마사진"></a>
+            <figcaption>
+              <h2>하늘 위 영화관, 민트시네마(VOD) 서비스 재개</h2>
+              <p>기내 영상물 서비스를 국제선 전 노선에서 만나보세요!</p>
+             <span>이벤트 기간 2023.01.31 ~ 2023.12.31</span> 
+              <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                <a href="#"> <i class="ion-person-add"></i></a>
+                <a href="#"> <i class="ion-heart"></i></a>
+              </div>
+            </figcaption>
+          </figure>
+     </div>
+
+
+     <div class="box-4">
+          <figure class="event">
+            <a href="#"><img src="images/event-dog.png" alt="댕댕사진"></a>
+            <figcaption>
+              <h2>에어서울과 함께 떠나는 댕댕트립</h2>
+              <p>국내선 강아지 체크인 시, 도쿡 간식 무료 제공!</p>
+             <span>이벤트 2023.01.09 ~ 2023.04.30</span> 
+            </figcaption>
+          </figure>
+          <figure class="event">
+            <a href="#"><img src="images/event-dakamas.png" alt="다카마쓰사진"></a>
+            <figcaption>
+              <h2>다카마쓰로 사누키 우동 먹으러갈래?</h2>
+              <p>에어서울 특가타고 우동의 도시 다카마쓰로!</p>
+             <span>이벤트 기간 2023.01.17 ~ 2023.02.12</span> 
+            </figcaption>
+          </figure>
+          <figure class="event event-01">
+            <a href="#"><img src="images/event-aeon.png" alt=" 이온몰사진"></a>
+            <figcaption>
+              <h2>이온몰 x 에어서울</h2>
+              <p>이온몰 제휴 할인 프로모션</p>
+             <span>이벤트 기간 2022.12.14 ~ 2023.02.28</span> 
+            </figcaption>
+          </figure>
+     </div>
+  </div>
+</section>
+
+    <!-- 공지사항영역 -->
+    <div class="container-4">
+        <div class="inner-6 clear">
+            <div class="notice">
+                <h2>공지사항</h2>
+                    <div class="notice-left clear">
+                          <ul>
+                            <img src="images/notice-icon.png" alt="공지사항아이콘">
+                            <li>
+                                <a href="#">[유료할증료] 23년 03월 국내선 유류할증료 안내</a>
+                                <span class="date">2023. 02. 10</span>
+                            </li>
+                            <img src="images/notice-icon.png" alt="공지사항아이콘">
+                            <li>
+                                <a href="#">[스케줄] 국내선 운항 시각 변경 안내</a>
+                                <span class="date">2023. 02. 02</span>
+                            </li>
+                            <img src="images/notice-icon.png" alt="공지사항아이콘">
+                            <li>
+                                <a href="#">[공지] 제주공항 기상으로 인한 결항 안내</a>
+                                <span class="date">2023. 01. 27</span>
+                            </li>
+                            <img src="images/notice-icon.png" alt="공지사항아이콘">
+                            <li>
+                                <a href="#">[공지] 제주공항 강설, 강풍으로 인한 결항 안내</a>
+                                <span class="date">2023. 01. 25</span>
+                            </li>
+                            <img src="images/notice-icon.png" alt="공지사항아이콘">
+                            <li>
+                                <a href="#">[공지] 제주공항 강설, 강풍으로 인한 결항 안내</a>
+                                <span class="date">2023. 01. 25</span>
+                            </li>
+                      
+                          </ul>
+                             <a href="#" class="notice-more">전체보기</a>
+                    </div>
+            </div>
+
+            <!-- 동영상영역 -->
+            <div class="media">
+                <h2>미디어룸</h2>
+                    <div class="media-box">
+                        <div class="clip">
+                            <iframe id="videoplayer"  src="https://www.youtube.com/embed/2tX_sqmMl2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <a href="#" class="notice-more">전체보기</a>
+                    </div>
+            </div>
+        </div>
+       
+    </div>
+
+<!-- 푸터영역  -->
+<footer class="footer">
+    <div class="inner-7">
+          <div class="group">
+              <ul>
+                  <a href="#">그룹사 바로가기</a>
+                  <div class="lis">
+                    <li><a href="#">아시아나항공</a></li>
+                    <li><a href="#">아시아나DT</a></li>
+                    <li><a href="#">에어부산</a></li>
+                    <li><a href="#">아시아나에어포트</a></li>
+                    <li><a href="#">아시아나세이버</a></li>
+                </div>
+              </ul>   
+               
+          </div>
+
+     
+     <!-- 회사소개영역 -->
+      <div class="list clear">
+          <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">여객운송약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이메일무단수집거부</a></li>
+              <li><a href="#">항공교통이용자 서비스 계획</a></li>
+              <li><a href="#">피해구제계획</a></li>
+              <li><a href="#">소비자 안전 관련 정보 공개</a></li>
+          </ul>
+      </div>
+      <div class="footer-02">
+          <a href="#"><img src="images/footer-logo.png" alt="로고이미지"></a>
+
+          <div class="box-03">
+              <button><a href="#">사이트맵</a></button>
+              <button class="btn-03"><a href="#">자주묻는질문</a></button>
+              <button class="btn-04"><a href="#" >1:1문의</a></button>
+          </div> 
+      </div>
+    <!-- 푸턴하단영역 -->
+      <div class="footer-bottom clear">
+          <div class="f-content clear">
+          <p>에어서울 주식회사 대표이사 조진만</p>
+          <p>본사 소재지 : (우)07505 서울특별시 강서구 하늘길 176</p>
+          <p>사업장 소재지 : (우)22382 인천광역시 중구 공항로 272 운서동</p>
+          <p>국내선, 국제선 예약문의 1800-8100 (09:00~18:00)</p>
+          <p><span>사업자 등록 번호 : 825-81-00091 <a href="#" title="새창"><i> 사업자정보확인</i></a></span>통신판매업 신고번호 제 2016-인천중구-0199</p>
+          <p><span>호스팅 서버 위치 : 아시아나IDT(주) 전산센터(서울 강서구 오쇠동)</span> 개인정보보호책임자 대표이사 조진만</p>
+          <p>&copy; AIR SEOUL, Inc. All Rights Reserved.</p>
+      </div>
+          <div class="f-right">
+            
+           <div class="sns clear">
+            <a href="#"><img  class="animate__animated" src="images/facebook.png" alt="페이스북"></a>
+            <a href="#"><img src="images/instar.png" alt="인스타그램"></a>
+            <a href="#"><img src="images/youtube.png" alt="유투브"></a>
+            </div>
+              <p>브랜드 협업, 미디어 광고, 제휴 프로모션 등 제안을 기다립니다.</p>
+              <p> 에어서울과 함께 새로운 변화를 시작하세요.</p>
+          </div>
+      </div>
+   </div>
+  </footer>
+  <!-- <div class="flow-txt">
+    <div class="txt">
+        AIR SEOUL AIR SEOUL AIR SEOUL
+        AIR SEOUL AIR SEOUL AIR SEOUL
+        AIR SEOUL AIR SEOUL AIR SEOUL
+        AIR SEOUL AIR SEOUL AIR SEOUL
+    </div>
+ </div> -->
+
+
+</body>
+</html>
+
