@@ -168,6 +168,45 @@ $('.mb-mainmenu').removeClass('mb-mainmenu-open')
     //     });
 
 
+   //검색필드기능
+   //검색필드를 보여주는 버튼
+   $(document).ready(function(){
+   const searchBt = $('.search-bt')
+   //검색필드요소
+   const searchWrap = $('.search-wrap')
+   searchWrap.click(function(e){
+       e.stopPropagation();
+      
+       
+       
+   })
+   searchBt.click(function(event){
+       event.preventDefault();
+       event.stopPropagation()
+       searchWrap.fadeToggle(300)
+       //검색버튼 이미지 교체 하기
+       let imgName = $(this).find('img').attr('src');
+       // console.log(imgName)
+       if(imgName == 'images/search-icon.png'){
+           $(this).find('img').attr('src','images/close0btn.png')
+        //    $(this).css('background','#3d66c4')
+
+       }else{
+           $(this).find('img').attr('src','images/search-icon.png')
+        //    $(this).css('background','#fff')
+       }
+
+   })
+
+   $('body').click(function(){
+       searchWrap.fadeOut(300);
+       searchBt.find('img').attr('src','images/search-icon.png')
+    //    searchBt.css('background','#fff')
+       
+
+   })
+ });
+
 
 
 
