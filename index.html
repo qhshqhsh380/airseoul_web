@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>에어서울코딩</title>
-      <!-- 파비곤 -->
-      <link  rel= "icon"  유형= "images/png"  href= "images/favicon.ico" > 
-      <!-- swiper-slide css -->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- 파비곤 -->
+      <link rel="shortcut icon" href="favicon.ico">
+    <!-- swiper-slide css -->
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="css/main.css">
 
-      <!-- jquery-cdn -->
+    <!-- jquery-cdn -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <!-- swiper js -->
@@ -29,16 +28,18 @@
       <!-- 비디오사이즈 -->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script src="js/jquery.fitvids.js"></script>
-    <script defer src="js/main.js"></script>
+      <script src="js/prefixfree.jquery.js"></script>
+      <script defer src="js/main.js"></script>
 </head>
+
 <body>
-    
-<!-- 헤더영역 -->
- <!-- 모바일 메뉴 버튼 -->
- <a href="#" class="mb-bt">
-    <span class="line"></span></a>
-        <!-- 모바일 메뉴바 -->
-        <div class="mb-nav">
+ 
+   <!-- 모바일 메뉴 버튼 -->
+   <a href="#" class="mb-bt">
+    <span class="line"></span>
+   </a>
+    <!-- 모바일 메뉴바 -->
+    <div class="mb-nav">
             <div class="mb-nav-top clear">
                 <a href="#">로그인</a>
                 <a href="#">회원가입</a>
@@ -92,11 +93,10 @@
                     </li>
                 </ul>
             </div>
-        </div>
-   <!-- 모바일 메뉴 마스크 -->
-   <div class="mb-menu-mask"></div>
-
-
+    </div>
+    <!-- 모바일 메뉴 마스크 -->
+    <div class="mb-menu-mask"></div>
+    <!-- 헤더영역 -->
     <header class="header">
         <div class="header-container">
             <!-- 로고영역 -->
@@ -151,22 +151,21 @@
             <div class="icon">
                 <a href="#"><img src="images/login-icon.png" alt="로그인" title="로그인"></a>
                 <a href="#"><img src="images/mypage-icon.png" alt="마이페이지" title="마이페이지"></a>
-                <a href="#" title="Search" class="search-bt"><img src="images/search-icon.png" alt="검색" title="검색"></a>
+                <a href="#" title="Search" class="search-bt"><img src="images/search-icon.png" alt="내용검색" title="검색"></a>
             </div>
         </div>
     </header>
-<!-- <img src="images/close0btn.png" alt=""> -->
     <!-- 검색영역 -->
     <div class="search-wrap">
-        <form action="" class="search-form">
-          <input type="text" class="search-form-word" name="" id="" placeholder="검색어를 입력해 주세요.">
+        <form action="#" class="search-form">
+          <input type="text" class="search-form-word" name="text" id="text" placeholder="검색어를 입력해 주세요.">
           <input type="button" class="search-form-bt" value="검색">
         </form>
-        </div>
+    </div>
     <!-- 메인배너영역 -->
-<section class="mainbanner">
+    <section class="mainbanner">
         <div class="airplane-inner">
-        <img class="animate__animated animate__fadeInBottomLeft" src="images/airplane.png" alt="비행기이미지">
+            <img class="animate__animated animate__fadeInBottomLeft" src="images/airplane.png"     alt="비행기이미지">
         </div>
         <div class="banner-bg"></div>
         <div class="mb-bg01">
@@ -181,7 +180,7 @@
                 <img src="images/Cloud.png" alt="구름이미지">
             </div>
         </div> 
-</section>
+    </section>
     <!-- 배너퀵메뉴영역 -->
     <section class="banner-quick">
          <div class="ba-container">
@@ -193,46 +192,46 @@
                     <button class="but">다구간</button>
                     <input class="txt" type="text" placeholder="할인코드입력">
                     <div class="check">
-                    <input type="checkbox">
-                    <label for="">가까운 날짜 조회</label>
-                     </div>    
+                      <input type="checkbox" id="check" name="check">
+                      <label for="check">가까운 날짜 조회</label>
+                    </div>    
                 </div>
                 <div class="form02">
                     <div class="input-wrap">
-                        <input type="text" id="" name="" placeholder="출발지">
+                        <input type="text" id="Departure" name="Departure" placeholder="출발지">
                         <a class="btn-1" href="#"></a>
                     </div>
                     <div class="input-wrap">
-                        <input type="text" id="" name="" placeholder="도착지">
+                        <input type="text" id="Arrival" name="Arrival" placeholder="도착지">
                         <a class="btn-2" href="#"></a>
                     </div>
                     <div class="input-wrap">
-                        <input type="text" id="" name="" placeholder="탑승일">
+                        <input type="text" id="data" name="data" placeholder="탑승일">
                         <a class="btn-3" href="#"></a>
                     </div>
                     <div class="input-wrap">
-                        <input class="input-wrap-04" type="text" id="" name="" placeholder="탑승객">
+                        <input class="input-wrap-04" type="text" id="men" name="men" placeholder="탑승객">
                         <a class="btn-4" href="#"></a>
                     </div>
                   <div class="input-wrap input-wrap-4">
-                     <input class="input-wrap-04" type="text" id="" name="" placeholder="좌석등급">
+                     <input class="input-wrap-04" type="text" id="level" name="level" placeholder="좌석등급">
                         <a class="btn-5" href="#"></a>
                     </div>
                     <div class="input-wrap input-wrap-5">
-                        <input type="text" id="" name="" placeholder="조회">
+                        <input type="text" id="submit" name="submit" placeholder="조회">
                         <a class="btn-6" href="#"></a>
                     </div>
                 
                 </div>
             </div>
- <!-- 모바일퀵메뉴버전 -->
+    <!-- 모바일퀵메뉴버전 -->
          <div class="mb-quick">
             <div class="mb-box">
-             <label><input type="radio" name="radio" id="Departure">  왕복</label>
-             <label><input type="radio" name="radio" id="Arrival">  편도</label>
+             <label><input type="radio" name="Departure" id="왕복">  왕복</label>
+             <label><input type="radio" name="Arrival" id="편도">  편도</label>
              <div class="text">
-                    <span class="left">출발 <br><p class="m-txt m-txt-01">Departure</p></span> 
-                    <span class="right">도착<br><p class="m-txt m-txt-02">Arrival</p></span>
+                    <p class="left">출발<br><span class="m-txt m-txt-01">Departure</span></p> 
+                    <p class="right">도착<br><span class="m-txt m-txt-02">Arrival</span></p>
              </div>
                 <div class="box">
                     <button type="button">일정선택</button>
@@ -255,9 +254,6 @@
         <div class="cloud-right cloud-right-02">
             <img src="images/Cloud-2.png" alt="구름이미지">
         </div>
-
-
-
     </section>
     <!-- 사이드배너영역  -->
     <section class="side-banner">
@@ -343,7 +339,7 @@
             </div>
          </div>
         </section>
-    <!-- 모바일 슬라이더 -->
+       <!-- 모바일 슬라이더 -->
       <section class="content">
          <div class="inner">
             <div class="swiper sw-basic-2">
@@ -371,108 +367,89 @@
     
               
             </div>
-<!-- 
-            <div class="btn-next">
-                <span class="material-icons">
-                    chevron_right
-                    </span>
-                    
-            </div>
-            <div class="btn-prev">
-                <span class="material-icons">
-                    chevron_left
-                    </span>
 
-    
-            </div> -->
        </div>
       </section>
-
     </main>
-
-<!-- 지금떠나기 좋은 여행  -->
-     <section class="contents">
+   <!-- 지금떠나기 좋은 여행  -->
+    <section class="contents">
         <h2>지금 떠나기 좋은 여행</h2>
         <div class="inner-2">
                 <div class="swiper sw-basic">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="box box-0">
-                                <img src="images/JEJUDO.png" alt="제주도사진">
-                                  <figcaption>
+                                 <img src="images/JEJUDO.png" alt="제주도사진">
+                                  <div class="txt-box">
                                     <h3>서울/김포 - 제주</h3>
                                     <p>일반석 편도</p>
                                     <span>KRW 10,600 ~</span>
                                     <i>에메랄드를 쏟아 부은 옥빛 바다
                                         푸르른 들판과 오름,
                                         특색 있는 맛집과 감성적인 카페를 모두 누릴 수 있는 제주</i>
-                                  </figcaption>
-                                <a href="#"></a>
+                                  </div>
+                                  <a href="#"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="box box-1">
                                 <img src="images/Narita.png" alt="나리타사진">
-                                <figcaption>
+                                <div class="txt-box">
                                     <h3>서울/인천 - 도쿄/나리타</h3>
                                     <p>일반석 편도</p>
                                     <span>KRW 76,600 ~</span>
                                     <i>대도시의 화려함 속에 자연이 숨어있고,
                                         옛 모습 그대로의 거리가 살아 숨쉬는
                                         일본의 수도이자 세계 최대의 도시 중 하나, 도쿄</i>
-                                  </figcaption>
+                                </div>
                                 <a href="#"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="box box-2">
                                 <img src="images/Boracay.png" alt="보라카이사진">
-                                <figcaption>
+                                <div class="txt-box">
                                     <h3>서울/인천 - 보라카이</h3>
                                     <p>일반석 편도</p>
                                     <span>KRW 79,900 ~</span>
                                     <i>발길 닿는 모든 장소에 자연이 숨쉬며
                                         다양한 볼거리와 먹거리가 가득한 문화의 섬,
                                         세계 3대 석양을 품은 보물섬</i>
-                                  </figcaption>
-                                  <a href="#"></a>
+                                </div>
+                                <a href="#"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="box box-3">
                                 <img src="images/OSAKA-2.png" alt="오사카사진">
-                                <figcaption>
+                                <div class="txt-box">
                                     <h3>서울/인천 - 오사카/간사이</h3>
                                     <p>일반석 편도</p>
                                     <span>KRW 65,900 ~</span>
                                       <i>고층 빌딩과 화려한 야경,  천하의 부엌이자 쇼핑의 
                                         천국 다양한 먹거리와 볼거리로 오감만족이 가능한 도시</i>
-                                    </figcaption>
-                                    <a href="#"></a>
+                                </div>
+                                <a href="#"></a>
                             </div>
                         </div>
-                  </div>
-                  <div class="swiper-pagination"></div>       
+                    </div>
+                    <div class="swiper-pagination"></div>       
                 </div>
     
                 <div class="btn-next">
                     <span class="material-icons">
                         chevron_right
-                        </span>
-                        
+                    </span>
                 </div>
                 <div class="btn-prev">
                     <span class="material-icons">
-                        chevron_left
-                        </span>
-    
-        
-            </div>
-      </div>
-     </section>
-
-<!--제휴서비스 -->
-<div class="container">
+                    chevron_left
+                    </span>
+                </div>
+       </div>
+    </section>
+   <!--제휴서비스 -->
+   <div class="container">
     <h2>제휴 서비스</h2>
     <div class="inner-3 clear">
         <div class="pc-circle">
@@ -530,18 +507,16 @@
         <a href="#"><img src="images/mb-trip-icon.png" alt="여행자보험아이콘"></a>
        </div>
       </div>
+
     </div>
+    
+     <!-- 제휴서비스 중간 선 -->
     <div class="line">
     </div>
-
-
-
-    <!-- 제휴서비스 중간 선 -->
-
-</div>   
-<!-- 제휴서비스 카드 배너영역 -->
-<div class="container container-box">
-    <div class="inner-3">
+   </div>   
+   <!-- 제휴서비스 카드 배너영역 -->
+   <div class="container container-box">
+      <div class="inner-3">
         <div class="card">
           <div class="banner-control clear">
               <div class="banner-control-box">
@@ -616,40 +591,37 @@
                   <div class="swiper-slide">
                       <a href="#">
                        <figure class="card-box">
-                        <img src="images/kkk.png" alt="kkday사진"/>
-                        <figcaption>
-                          <h3>kkday</h3>
-                          <p>에어서울 회원 대상 <br>
+                          <img src="images/kkk.png" alt="kkday사진"/>
+                          <figcaption>
+                           <h3>kkday</h3>
+                           <p>에어서울 회원 대상 <br>
                             국내/국제 액티비티 할인 쿠폰 제공  </p>
-                        </figcaption>
+                          </figcaption>
                       </figure>
                     </a>
                   </div>
                   <div class="swiper-slide">
                       <a href="#">
                        <figure class="card-box">
-                        <img src="images/realtrip.png" alt="리얼트립사진"/>
-                        <figcaption>
-                          <h3>마이리얼트립</h3>
-                          <p>에어서울 항공권 구매 시,
+                          <img src="images/realtrip.png" alt="리얼트립사진"/>
+                          <figcaption>
+                            <h3>마이리얼트립</h3>
+                            <p>에어서울 항공권 구매 시,
                             액티비티, 숙소 최대 7% 할인 쿠폰 제공 </p>
-                        </figcaption>
+                          </figcaption>
                       </figure>
                     </a>
                  </div>
              </div>
           </div>
       </div>
+     </div>
    </div>
-</div>
-</section>
-
-<!-- 이벤트영역 -->
-<section class="container-2">
-    
+   <!-- 이벤트영역 -->
+   <section class="container-2">
     <div class="inner-4">
         <h3>에어서울만의 이벤트</h3>
-      <div class="box-4">
+        <div class="box-4">
         <figure class="event">
             <a href="#"><img src="images/event-Boracay.png" alt="보라카이사진"></a>
             <figcaption>
@@ -678,10 +650,10 @@
               </div>
             </figcaption>
           </figure>
-     </div>
+       </div>
 
 
-     <div class="box-4">
+       <div class="box-4">
           <figure class="event">
             <a href="#"><img src="images/event-dog.png" alt="댕댕사진"></a>
             <figcaption>
@@ -706,39 +678,39 @@
              <span>이벤트 기간 2022.12.14 ~ 2023.02.28</span> 
             </figcaption>
           </figure>
-     </div>
-  </div>
-</section>
-
-    <!-- 공지사항영역 -->
+       </div>
+   </div>
+   </section>
+   <!-- 공지사항영역 -->
     <div class="container-4">
         <div class="inner-6 clear">
             <div class="notice">
                 <h2>공지사항</h2>
                     <div class="notice-left clear">
                           <ul>
-                            <img src="images/notice-icon.png" alt="공지사항아이콘">
                             <li>
+                                <img src="images/notice-icon.png" alt="아이콘">
                                 <a href="#">[카드무이자] 2023년 4월 신용카드 무이자 할부 안내</a>
                                 <span class="date">2023. 03. 31</span>
                             </li>
-                            <img src="images/notice-icon.png" alt="공지사항아이콘">
+                         
                             <li>
+                                <img src="images/notice-icon.png" alt="아이콘">
                                 <a href="#">[공지] 코로나 19 관련 국가별 해외입국자에 대한 조치 현황 안내 ('23년 04월 01일 기준')</a>
                                 <span class="date">2022. 11. 10</span>
                             </li>
-                            <img src="images/notice-icon.png" alt="공지사항아이콘">
                             <li>
+                                <img src="images/notice-icon.png" alt="아이콘">
                                 <a href="#">[스케줄] 도쿄, 후쿠오카 노선 스케줄 변경 안내</a>
                                 <span class="date">2023. 04. 21</span>
                             </li>
-                            <img src="images/notice-icon.png" alt="공지사항아이콘">
                             <li>
+                                <img src="images/notice-icon.png" alt="아이콘">
                                 <a href="#">[유료할증료] '23년 05월 국제선 유료할증료 안내(한국발)</a>
                                 <span class="date">2023. 04. 19</span>
                             </li>
-                            <img src="images/notice-icon.png" alt="공지사항아이콘">
                             <li>
+                                <img src="images/notice-icon.png" alt="아이콘">
                                 <a href="#">[공지] 제주공항 강설, 강풍으로 인한 결항 안내</a>
                                 <span class="date">2023. 04. 18</span>
                             </li>
@@ -753,7 +725,7 @@
                 <h2>미디어룸</h2>
                     <div class="media-box">
                         <div class="clip">
-                            <iframe id="videoplayer"  src="https://www.youtube.com/embed/2tX_sqmMl2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe id="videoplayer" src="https://www.youtube.com/embed/2tX_sqmMl2U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write;  web-share" allowfullscreen></iframe>
                         </div>
                         <a href="#" class="notice-more">전체보기</a>
                     </div>
@@ -761,26 +733,25 @@
         </div>
        
     </div>
-
-<!-- 푸터영역  -->
-<footer class="footer">
+   <!-- 푸터영역  -->
+  <footer class="footer">
     <div class="inner-7">
-          <div class="group">
-              <ul>
-                  <a href="#">그룹사 바로가기</a>
-                  <div class="lis">
+        <div class="group">
+            <ul class="group-txt">
+                <li><a href="#">그룹사 바로가기</a>
+                  <ul class="list-text">
                     <li><a href="#">아시아나항공</a></li>
                     <li><a href="#">아시아나DT</a></li>
                     <li><a href="#">에어부산</a></li>
                     <li><a href="#">아시아나에어포트</a></li>
                     <li><a href="#">아시아나세이버</a></li>
-                </div>
-              </ul>   
-               
-          </div>
+                  </ul>
+                </li>
+            </ul>
+        </div>
 
-     
-     <!-- 회사소개영역 -->
+       
+      <!-- 회사소개영역 -->
       <div class="list clear">
           <ul>
               <li><a href="#">회사소개</a></li>
@@ -796,35 +767,34 @@
           <a href="#"><img src="images/footer-logo.png" alt="로고이미지"></a>
 
           <div class="box-03">
-              <button><a href="#">사이트맵</a></button>
-              <button class="btn-03"><a href="#">자주묻는질문</a></button>
-              <button class="btn-04"><a href="#" >1:1문의</a></button>
+              <button>사이트맵</button>
+              <button class="btn-03">자주묻는질문</button>
+              <button class="btn-04">1:1문의</button>
           </div> 
       </div>
-    <!-- 푸턴하단영역 -->
+      <!-- 푸턴하단영역 -->
       <div class="footer-bottom clear">
           <div class="f-content clear">
-          <p>에어서울 주식회사 대표이사 조진만</p>
-          <p>본사 소재지 : (우)07505 서울특별시 강서구 하늘길 176</p>
-          <p>사업장 소재지 : (우)22382 인천광역시 중구 공항로 272 운서동</p>
-          <p>국내선, 국제선 예약문의 1800-8100 (09:00~18:00)</p>
-          <p><span>사업자 등록 번호 : 825-81-00091 <a href="#" title="새창"><i> 사업자정보확인</i></a></span>통신판매업 신고번호 제 2016-인천중구-0199</p>
-          <p><span>호스팅 서버 위치 : 아시아나IDT(주) 전산센터(서울 강서구 오쇠동)</span> 개인정보보호책임자 대표이사 조진만</p>
-          <p>&copy; AIR SEOUL, Inc. All Rights Reserved.</p>
-      </div>
-          <div class="f-right">
-            
-           <div class="sns clear">
-            <a href="#"><img  class="animate__animated" src="images/facebook.png" alt="페이스북"></a>
-            <a href="#"><img src="images/instar.png" alt="인스타그램"></a>
-            <a href="#"><img src="images/youtube.png" alt="유투브"></a>
-            </div>
-              <p>브랜드 협업, 미디어 광고, 제휴 프로모션 등 제안을 기다립니다.</p>
-              <p> 에어서울과 함께 새로운 변화를 시작하세요.</p>
+            <p>에어서울 주식회사 대표이사 조진만</p>
+            <p>본사 소재지 : (우)07505 서울특별시 강서구 하늘길 176</p>
+            <p>사업장 소재지 : (우)22382 인천광역시 중구 공항로 272 운서동</p>
+            <p>국내선, 국제선 예약문의 1800-8100 (09:00~18:00)</p>
+            <p><span>사업자 등록 번호 : 825-81-00091 <a href="#" title="새창"><i> 사업자정보확인</i></a></span>통신판매업 신고번호 제 2016-인천중구-0199</p>
+            <p><span>호스팅 서버 위치 : 아시아나IDT(주) 전산센터(서울 강서구 오쇠동)</span> 개인정보보호책임자 대표이사 조진만</p>
+            <p>&copy; AIR SEOUL, Inc. All Rights Reserved.</p>
           </div>
+           <div class="f-right">
+              <div class="sns clear">
+              <a href="#"><img  class="animate__animated" src="images/facebook.png" alt="페이스북"></a>
+              <a href="#"><img src="images/instar.png" alt="인스타그램"></a>
+              <a href="#"><img src="images/youtube.png" alt="유투브"></a>
+              </div>
+                <p>브랜드 협업, 미디어 광고, 제휴 프로모션 등 제안을 기다립니다.</p>
+                <p> 에어서울과 함께 새로운 변화를 시작하세요.</p>
+           </div>
       </div>
    </div>
-  </footer>
+</footer>
   <!-- <div class="flow-txt">
     <div class="txt">
         AIR SEOUL AIR SEOUL AIR SEOUL
@@ -833,8 +803,6 @@
         AIR SEOUL AIR SEOUL AIR SEOUL
     </div>
  </div> -->
-
-
 </body>
 </html>
 
